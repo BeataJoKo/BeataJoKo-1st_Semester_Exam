@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Be Button</title>
+</head>
+
+        
+<body>
+     <header>
+        <div class="wrapper-header">
+            <div class="header-aera1">
+                <a href="index.html">  <img src="image/logo_extra_simple_cream.png" alt="logo"></a>
+            </div>
+            
+           <div class="header-area2">
+                <label id="burger">&#9776;</label>
+            </div>
+
+                
+            <nav id="header-area3" class="header-area3">
+                <a href="web.html"> Web </a>
+                <a href="video.html"> Video </a>
+                <a href="animation.html"> Animation </a>
+                <a href="ux.html"> UX </a>
+                <a href="about.html"> About </a>
+            </nav>
+               
+                
+            <label id="header-area4" class="header-area3">
+                <a href="about.html" style="margin-right: 15%"> About </a>
+            </label>
+            
+            </div>
+         
+         </header>
+    
+    <style>
+         #header-area3{
+         visibility: hidden;
+             }
+        
+        @media all and (max-width:812px) {
+            #header-area3{
+                visibility: visible;
+            }
+            #header-area4active{
+                visibility: hidden;
+            }
+        }
+         </style>
+    
+    <main>
+        <div class="wrapper_main">
+            
+         <div class="main-area1">
+             
+             <div class="empty2"></div>
+                <div class="foto">
+                 <img src="image/large/pathes2a.png" alt="splash" class="path">    
+             </div>
+        </div>
+            
+            <div id="menu" class="main-area1">
+                                 
+                <label class="menu1">
+                     <a href="web.html"> <img src="image/large/pathes1aaa.png"  alt="Web"></a></label>
+                 <label class="menu3">   
+                      <a href="video.html"> <img src="image/large/pathes3aaa.png"  alt="Video"></a></label>
+                 <label class="menu2">
+                      <a href="animation.html"> <img src="image/large/pathes2aaa.png" alt="Animation"> </a></label>
+                 <label class="menu4">
+                     <a href="UX.html"> <img src="image/large/pathes4aaa.png" alt="UX"></a></label>
+                
+                                        
+             </div>
+            
+        </div>
+    </main>
+    
+    
+    <div id=wrapper_about class="wrapper_about">
+    <div class="about_area1">
+    <h1>
+        Be Button design <br>
+                be who you want to be
+        </h1>
+    </div>
+   </div>
+     
+    <footer>
+       <p> © Be Button </p>
+    </footer>
+    
+    <script>
+        
+        
+            let burger = document.querySelector("#burger");
+            let headerArea3 = document.querySelector("#header-area3")
+    
+            burger.addEventListener("click", functionOpen)
+    
+            function functionOpen(){
+                headerArea3.classList.toggle("header-area3-open")
+                    }
+           
+    </script>
+    
+    
+        
+    </body>
+</html>
+
